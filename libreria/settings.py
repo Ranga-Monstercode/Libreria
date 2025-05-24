@@ -74,6 +74,17 @@ WSGI_APPLICATION = 'libreria.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'LIBRERIA',       # Ej: LIBRERIA
+        'USER': 'admin',       # Ej: admin
+        'PASSWORD': '12345678',  # Ej: 12345678
+        'HOST': 'proyecto2.chagne2ipvx4.us-east-1.rds.amazonaws.com',       # Ej: proyecto2.chagne2ipvx4.us-east-1.rds.amazonaws.com
+        'PORT': '3306',
+    }
+}
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DB_NAME'),       # Ej: LIBRERIA
         'USER': os.environ.get('DB_USER'),       # Ej: admin
         'PASSWORD': os.environ.get('DB_PASSWORD'),  # Ej: 12345678
@@ -81,7 +92,7 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
-
+"""
 # Configuración de autenticación
 AUTH_PASSWORD_VALIDATORS = [
     
