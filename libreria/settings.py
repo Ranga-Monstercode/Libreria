@@ -77,7 +77,7 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),       # Ej: LIBRERIA
         'USER': os.environ.get('DB_USER'),       # Ej: admin
         'PASSWORD': os.environ.get('DB_PASSWORD'),  # Ej: 12345678
-        'HOST': os.environ.get('DB_HOST'),       # Ej: database-1.cbykauwrpyad.us-east-1.rds.amazonaws.com
+        'HOST': os.environ.get('DB_HOST'),       # Ej: proyecto2.chagne2ipvx4.us-east-1.rds.amazonaws.com
         'PORT': '3306',
     }
 }
