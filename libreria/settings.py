@@ -78,7 +78,7 @@ DATABASES = {
         'USER': os.environ.get('DB_USER'),       # Ej: admin
         'PASSWORD': os.environ.get('DB_PASSWORD'),  # Ej: 12345678
         'HOST': os.environ.get('DB_HOST'),       # Ej: proyecto2.chagne2ipvx4.us-east-1.rds.amazonaws.com
-        'PORT': '3306',
+        'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
 
